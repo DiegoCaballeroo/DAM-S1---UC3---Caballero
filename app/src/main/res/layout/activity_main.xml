@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
@@ -103,9 +103,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,98 +115,119 @@
 
         <RadioButton
             android:id="@+id/IdaVuelta"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:padding="10dp"
             android:text="@string/IdaVuelta" />
 
         <RadioButton
             android:id="@+id/SolamenteIda"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:padding="10dp"
             android:text="@string/SolamenteIda" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <EditText
             android:id="@+id/Origen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="@string/Origen" />
+            android:background="@drawable/rounded_border"
+            android:drawableStart="@drawable/baseline_flight_takeoff_24"
+            android:hint="@string/Origen"
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/Destino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="@string/Destino" />
+            android:background="@drawable/rounded_border"
+            android:drawableStart="@drawable/baseline_flight_land_24"
+            android:hint="@string/Destino"
+            android:padding="10dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <EditText
             android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
+            android:background="@drawable/rounded_border"
+            android:drawableStart="@drawable/baseline_edit_calendar_24"
             android:hint="Fecha de ida"
-            android:inputType="date" />
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/editTextDate2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
+            android:background="@drawable/rounded_border"
+            android:drawableStart="@drawable/baseline_edit_calendar_24"
             android:hint="Fecha de vuelta"
-            android:inputType="date" />
+            android:padding="10dp" />
     </LinearLayout>
 
     <EditText
         android:id="@+id/TipoAsiento"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/TipoAsiento"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_border"
+        android:drawableStart="@drawable/baseline_airline_seat_recline_extra_24"
+        android:hint="@string/TipoAsiento"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <EditText
         android:id="@+id/CantPersonas"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/CantPersonas"
-        app:layout_constraintEnd_toEndOf="@+id/TipoAsiento"
-        app:layout_constraintStart_toStartOf="@+id/TipoAsiento"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_border"
+        android:drawableEnd="@drawable/baseline_add_circle_outline_24"
+        android:hint="@string/CantPersonas"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TipoAsiento" />
+
 
     <CheckBox
         android:id="@+id/PuntosLATAMPass"
@@ -217,35 +240,63 @@
 
     <Button
         android:id="@+id/BtnVuelo"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#EC134C"
         android:text="@string/BtnVuelo"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/CantPersonas"
         app:layout_constraintStart_toStartOf="@+id/CantPersonas"
         app:layout_constraintTop_toBottomOf="@+id/PuntosLATAMPass" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        android:background="#b2b9d4"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnVuelo">
 
-        <TextView
-            android:id="@+id/textView5"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Compra vuelos con escala en Sao Paulo con nuestro asistente virtual." />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/whatsapp_logo_variant" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Compra vuelos con escala en São Paulo con nuestro asistente virtual."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Abrir Whatsapp" />
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/baseline_arrow_outward_24"
+            android:text="Abrir WhatsApp"
+            android:textColor="#120A50"
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
