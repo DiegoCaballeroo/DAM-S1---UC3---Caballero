@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">DAM_UC3_Caballero</string>
+    <string name="Compar" />
+    <string name="Comprar">Comprar</string>
+    <string name="Vuelos">Vuelos</string>
+    <string name="Paquetes">Paquetes</string>
+    <string name="Hoteles">Hoteles</string>
+    <string name="Autos">Autos</string>
+    <string name="Seguros">Seguros</string>
+    <string name="IdaVuelta">Ida y vuelta</string>
+    <string name="SolamenteIda">Solamente ida</string>
+    <string name="Origen">Origen</string>
+    <string name="Destino">Destino</string>
+    <string name="TipoAsiento">Tipo de asiento</string>
+    <string name="CantPersonas">Cantidad de personas</string>
+    <string name="BtnVuelo">Procurar vuelo</string>
+    <string name="PuntosLATAMPass">Usar puntos de LATAM Pass</string>
 </resources>

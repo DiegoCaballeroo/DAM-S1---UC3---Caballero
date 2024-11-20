@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Comprar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="Comprar"
+        android:text="@string/Comprar"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,10 +28,10 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/Comprar">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/Vuelos"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="4dp"
@@ -41,11 +41,11 @@
             android:button="@null"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Vuelos"
+            android:text="@string/Vuelos"
             android:textSize="10dp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/Paquetes"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="4dp"
@@ -55,11 +55,11 @@
             android:button="@null"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Paquetes"
+            android:text="@string/Paquetes"
             android:textSize="10dp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/Hoteles"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="4dp"
@@ -69,11 +69,11 @@
             android:button="@null"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Hoteles"
+            android:text="@string/Hoteles"
             android:textSize="10dp" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/Autos"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="4dp"
@@ -83,11 +83,11 @@
             android:button="@null"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Autos"
+            android:text="@string/Autos"
             android:textSize="10dp" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/Seguros"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="4dp"
@@ -97,7 +97,7 @@
             android:button="@null"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Seguros"
+            android:text="@string/Seguros"
             android:textSize="10dp" />
     </LinearLayout>
 
@@ -112,18 +112,18 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/IdaVuelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Ida y vuelta" />
+            android:text="@string/IdaVuelta" />
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/SolamenteIda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Solamente ida" />
+            android:text="@string/SolamenteIda" />
     </LinearLayout>
 
     <LinearLayout
@@ -137,20 +137,20 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/Origen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Origen" />
+            android:text="@string/Origen" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/Destino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Destino" />
+            android:text="@string/Destino" />
     </LinearLayout>
 
     <LinearLayout
@@ -183,47 +183,47 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/TipoAsiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Tipo de asiento"
+        android:text="@string/TipoAsiento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/linearLayout4"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/CantPersonas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Cantidad de personas"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        android:text="@string/CantPersonas"
+        app:layout_constraintEnd_toEndOf="@+id/TipoAsiento"
+        app:layout_constraintStart_toStartOf="@+id/TipoAsiento"
+        app:layout_constraintTop_toBottomOf="@+id/TipoAsiento" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/PuntosLATAMPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Usar puntos de LATAM Pass"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        android:text="@string/PuntosLATAMPass"
+        app:layout_constraintStart_toStartOf="@+id/CantPersonas"
+        app:layout_constraintTop_toBottomOf="@+id/CantPersonas" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BtnVuelo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Procurar vuelo"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        android:text="@string/BtnVuelo"
+        app:layout_constraintEnd_toEndOf="@+id/CantPersonas"
+        app:layout_constraintStart_toStartOf="@+id/CantPersonas"
+        app:layout_constraintTop_toBottomOf="@+id/PuntosLATAMPass" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -232,7 +232,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
         app:layout_constraintStart_toStartOf="@+id/linearLayout4"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintTop_toBottomOf="@+id/BtnVuelo">
 
         <TextView
             android:id="@+id/textView5"
