@@ -1,0 +1,19 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo cuando está seleccionado -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Fondo blanco -->
+            <corners android:radius="30dp" /> <!-- Bordes redondeados -->
+            <stroke android:width="1dp" android:color="@android:color/black" /> <!-- Contorno negro -->
+        </shape>
+    </item>
+    <!-- Fondo cuando no está seleccionado -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Fondo blanco -->
+            <corners android:radius="30dp" /> <!-- Bordes redondeados -->
+            <stroke android:width="1dp" android:color="@android:color/black" /> <!-- Contorno negro -->
+        </shape>
+    </item>
+</selector>
+
